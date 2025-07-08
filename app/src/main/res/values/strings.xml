@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">firstApp</string>
     <string name="buttonLabel">Submit</string>
+    <string name="textFieldHint">Please enter the weight</string>
+    <string name="textLabel">Weight will show here</string>
 </resources>
