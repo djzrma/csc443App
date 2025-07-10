@@ -34,8 +34,18 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 EditText editText = findViewById(R.id.editTextWeight);
                 TextView textView = findViewById(R.id.textView);
-                String s = editText.getText().toString();
-                textView.setText(s);
+                int luggageWeight = Integer.parseInt(editText.getText().toString());
+
+                if (luggageWeight > 50){
+                    String result = "Your luggage weight is: " + luggageWeight + "lbs. It is overweight.";
+                    textView.setText(result);
+                }
+                else {
+                    String result = "Your luggage weight is: " + luggageWeight + "lbs. This is within the allowed limit.";
+                    textView.setText(result);
+                }
+                //String s = editText.getText().toString();
+                //textView.setText(s);
             }
         });
     }
